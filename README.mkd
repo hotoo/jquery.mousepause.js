@@ -1,0 +1,17 @@
+
+# jQuery.fn.mousepause()
+
+类似输入过程的 [智能感知](https://github.com/hotoo/RhythmAware.js)，
+这个脚本为鼠标增加了 `mousepause` 事件，这个事件在鼠标移动过程中不触发，
+仅在鼠标停止移动后才触发。
+
+一般可用于页签(tabs)或下拉菜单等控件的事件触发，可以避免用户在无意识的途经
+目标元素时，被触发不合适的事件。
+
+可以配合 mousemove, mouseout 等事件一起工作。
+
+## 示例代码
+
+    jQuery("#demo").mousepause(function(){
+        $(this).highlight();
+    });
